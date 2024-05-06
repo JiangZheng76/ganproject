@@ -1,0 +1,8 @@
+data_params:
+  dataset: "imgs_crop512"
+  raw_data_root: "/media/jiangz/Seagate Exp/GanData/imgs_crop512/all_data"
+  num_train: 1800
+  num_valid: 1800
+
+train_params:
+  data_size: 512

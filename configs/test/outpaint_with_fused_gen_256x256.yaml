@@ -1,0 +1,17 @@
+task_manager: "test_managers.fused_generation.FusedGenerationManager"
+interactive: False
+seed: 9487
+
+# task specific configs
+height: 4096
+width: 4096
+batch_size: 8
+num_gen: 8
+lowres_height: 128
+
+blur_kernel: 65
+blur_type: "mean" # "mean" or "gaussian"
+
+style_centers:
+  - [0.5, 0.5]
+  

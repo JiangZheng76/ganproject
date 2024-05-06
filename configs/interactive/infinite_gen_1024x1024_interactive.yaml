@@ -1,0 +1,12 @@
+task_manager: "test_managers.infinite_generation.InfiniteGenerationManager"
+interactive: True
+seed: null
+
+# task specific configs
+height: 1024          # 生成图片大小
+width: 1024           # 生成图片大小
+batch_size: 1
+parallel_batch_size: 8
+num_gen: 1           # 生成图片数量
+lowres_height: 128    # 和height 相除得到一个缩放比例来缩放分辨率 
+

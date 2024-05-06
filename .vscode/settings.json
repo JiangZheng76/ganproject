@@ -82,5 +82,6 @@
         "ranges": "cpp",
         "stop_token": "cpp"
     },
-    "ros.distro": "noetic"
+    "ros.distro": "noetic",
+    "git.terminalAuthentication": false
 }

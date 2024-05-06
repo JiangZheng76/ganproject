@@ -1,0 +1,8 @@
+data_params:
+  dataset: "gan"
+  raw_data_root: "/media/jiangz/HIKVISION/20240503广州/2、jpg/all_jpg"
+  num_train: 12000
+  num_valid: 2000 
+
+train_params:
+  data_size: 1024
