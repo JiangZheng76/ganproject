@@ -1,0 +1,12 @@
+[submodule "thrid-party/yaml-cpp"]
+	path = thrid-party/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp.git
+[submodule "thrid-party/pybind11"]
+	path = thrid-party/pybind11
+	url = https://github.com/pybind/pybind11.git
+[submodule "thrid-party/pytest"]
+	path = thrid-party/pytest
+	url = https://github.com/pytest-dev/pytest.git
+[submodule "thrid-party/infinityGAN"]
+	path = thrid-party/infinityGAN
+	url = https://github.com/hubert0527/infinityGAN.git

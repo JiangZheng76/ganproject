@@ -15,24 +15,40 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+INCLUDEPATH += $$PWD/thrid-party/mysylar/mysylar  \
+    $$PWD/thrid-party/mysylar/mysylar/thrid-party/yaml-cpp/include 
+
+
+LIBS += -L"$$PWD/thrid-party/mysylar/lib"  \
+    -L"$$PWD/thrid-party/yaml-cpp/build"  \
+    -lmysylar \
+    -lyaml-cpp 
+    
+
+
 SOURCES += \
+    utils/ganconfig.cpp \
+    utils/generatethread.cpp \
     imageview.cpp \
     main.cpp \
     mainwindow.cpp \
     testdialog.cpp \
-    testwidge.cpp
+    testwidge.cpp 
 
 HEADERS += \
+    utils/gan.h \
+    utils/ganconfig.h \
+    utils/generatethread.h \
     imageview.h \
     mainwindow.h \
     testdialog.h \
-    testwidge.h
+    testwidge.h \
 
 FORMS += \
     imageview.ui \
     mainwindow.ui \
     testdialog.ui \
-    testwidge.ui
+    testwidge.ui 
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
